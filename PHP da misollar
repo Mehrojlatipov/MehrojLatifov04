@@ -1,1 +1,185 @@
 #Php dasturida misollar ishlash 
+1)   Kvadratning tomoni a berilgan. Uning perimetrini aniqlansin.
+<?php
+$a = readline("Enter a: ");
+$p = 4 * $a; echo $p;
+?>
+
+2)   Kvadratning tomoni a berilgan. Uning yuzasi aniqlansin.
+<?php
+$a = readline("Enter a: ");
+$s = $a * $a;
+echo "yuzasi=".$s;
+?>
+
+3)   To’g’ri to’rtburchakning tomonlari a va b berilgan. Uning perimetri aniqlansin.
+<?php
+$a = readline("Enter the value of a: ");
+$b = readline("Enter the value of b: ");
+$p = 2*($a+$b);
+$s = $a*$b;
+echo "s=".$s . PHP_EOL . "p=".$p;
+?>
+
+4)  Kubning yon tomoni a berilgan. Uning hajmi va to’la sirti aniqlansin.
+<?php
+$a=readline("a=");
+$v=$a*$a*$a;
+$t=6*$a*$a;
+echo "hajmi=" . $v . PHP_EOL . "sirti=".$t;
+?>
+
+5)   Doiraning radiusi r berilgan. Uning uzunligi l va yuzasi S aniqlang.
+<?php
+const p=M_PI;
+$r=readline("r=");
+$l=2*p*$r;
+$s=p*$r*$r;
+echo "hajmi=" . $l . PHP_EOL . "sirti=".$s;
+?>
+
+6)   Ikkita son a va b berilgan. Ularning o’rta arifmetigi aniqlansin
+<?php
+$a=readline("a=");
+$b=readline("b=");
+ 
+$c=($a+$b)/2.0;
+echo "arifmetigi=" .$c;
+?>
+
+6)   Nolga teng bo’lgan ikkita son berilgan. Ularning yig’indisini, ko’paytmasini va har birining kvadrati aniqlansin
+############################
+1)   <?php
+$a=readline("a=");
+$b=readline("b=");
+echo "yig'indisi=".$a+$b.PHP_EOL; echo "ko'paytmasi".$a*$b.PHP_EOL; echo $a." ning kvadrati=".$a**2; echo PHP_EOL;
+echo $b." ning kvadrati=".$b**2;
+?>
+
+2)   <?php
+$m=readline("massa=");
+$t=$m/1000; echo $t." tonna";
+?>
+
+3)   <?php
+$b=readline("bayt=");
+$k=$b/1024;
+echo $b." bayt=".$k." kilobayt";
+?>
+
+4)   <?php
+$a = readline("a=");
+$b = readline("b=");
+$c = (int)($a / $b); echo $c;
+?>
+
+5)   <?php
+$a = readline("a=");
+$b = readline("b=");
+$c = $a % $b; echo $c;
+?>
+
+6)   <?php
+$a = readline("2 xonali son=");
+$c=(int)($a/10);
+$d= $a % 10;
+echo "o'nlik=".$c.PHP_EOL; echo "birlik=".$d;
+?>
+
+7)   <?php
+$a = readline("2 xonali son=");
+$c=(int)($a/10);
+$d= $a % 10;
+$y=$c+$d;
+echo "yig'indi=".$y;
+?>
+
+
+8)  <?php
+$a = readline("2 xonali son=");
+$c=(int)($a/10);
+$d= $a % 10;
+$k=$d*10+$c; echo "javobi=".$k;
+?>
+
+9)  <?php
+$a = readline("3 xonali son=");
+$c=(int)($a/100); echo "javobi=".$c;
+?>
+
+10)  <?php
+$a = readline("3 xonali son=");
+$c=(int)($a/10);
+$k=$c%10;
+$d= $a % 10;
+echo "birlik=".$d.PHP_EOL; echo "o'nlik=".$k;
+?>
+
+
+########
+
+1)<?php
+$a = readline(); if($a > 0){
+echo $a + 1;
+} else{
+echo $a;
+}
+?>
+
+
+2)   <?php
+$a = readline("a="); if($a > 0){
+echo $a + 1;
+} else{
+echo $a-2;
+}
+?>
+
+3)   <?php
+$a = readline("a="); if($a > 0){
+echo $a + 1;
+} else if($a < 0){ echo $a-2;
+} else {
+echo "10";
+}
+?>
+
+4)   <?php
+$a = readline("a=");
+$b = readline("b=");
+$c = readline("c=");
+$ctrl=0;
+if($a > 0) { $ctrl=$ctrl+1;}; if($b > 0) { $ctrl=$ctrl+1;};
+ 
+if($c > 0) { $ctrl=$ctrl+1;}; echo "musbat sonlar soni="; echo $ctrl." ta";
+?>
+
+5)  <?php
+$a = readline("a=");
+$b = readline("b=");
+$c = readline("c=");
+$ctrl=0; $t=0;
+if($a > 0) { $ctrl=$ctrl+1;}; if($b > 0) { $ctrl=$ctrl+1;}; if($c > 0) { $ctrl=$ctrl+1;}; if($a < 0) { $t++;};
+if($b < 0) { $t++;};
+if($c < 0) { $t++;};
+echo "musbat sonlar soni="; echo $ctrl." ta".PHP_EOL; echo "manfiy sonlar soni="; echo $t." ta";
+?>
+
+6)  <?php
+$a = readline("a=");
+$b = readline("b="); if($a>$b) echo $a; else echo $b;
+?>
+
+7)   <?php
+$a = readline("a=");
+$b = readline("b="); if($a>$b) echo " 2 ";
+else if($a<$b) echo " 1 ";
+else echo " bu sonlar o'zaro teng";
+?>
+
+
+8)   <?php
+$a = readline("a=");
+$b = readline("b=");
+if($a>$b) echo $a.PHP_EOL.$b; else if($a<$b) echo $b.PHP_EOL.$a; else echo " bu sonlar o'zaro teng";
+?>
